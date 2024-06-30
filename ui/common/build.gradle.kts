@@ -1,10 +1,14 @@
 plugins {
-    id("com.karthickr.explore.android.library.compose")
+    alias(libs.plugins.app.android.library)
+    alias(libs.plugins.app.compose)
 }
 
 android {
     namespace = "com.karthickr.common"
 
+    buildFeatures {
+
+    }
 }
 
 dependencies {

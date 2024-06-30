@@ -1,6 +1,6 @@
 plugins {
-    id("com.karthickr.explore.android.application")
-    alias(libs.plugins.kotlin.compose.compiler)
+    alias(libs.plugins.app.android.application)
+    alias(libs.plugins.app.compose)
 }
 
 android {
@@ -10,7 +10,6 @@ android {
         applicationId = "com.karthickr95.explore"
         versionCode = 1
         versionName = "1.0"
-
     }
 
     buildTypes {
@@ -34,8 +33,8 @@ android {
 
 dependencies {
 
-    implementation(project(":ui:theme"))
-    implementation(project(":ui:common"))
+    implementation(projects.ui.theme)
+    implementation(projects.ui.common)
 
     implementation(libs.core)
     implementation(libs.lifecycle.runtime)

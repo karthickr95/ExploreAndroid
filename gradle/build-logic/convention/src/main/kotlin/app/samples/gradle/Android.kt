@@ -8,9 +8,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 
-fun Project.configureAndroid(
-    compose: Boolean = false
-) {
+fun Project.configureAndroid() {
 
     android {
         compileSdkVersion(Versions.COMPILE_SDK)
@@ -20,7 +18,6 @@ fun Project.configureAndroid(
             targetSdk = Versions.TARGET_SDK
 
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
             manifestPlaceholders += mapOf("appAuthRedirectScheme" to "empty")
 
             vectorDrawables {

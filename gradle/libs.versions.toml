@@ -1,5 +1,6 @@
 [versions]
 agp = "8.5.0"
+auth = "2.1.1"
 java = "17"
 kotlin = "2.0.0"
 kotlin-dsl = "4.3.0"
@@ -11,11 +12,11 @@ recyclerview = "1.3.2"
 viewpager2 = "1.1.0"
 junit = "4.13.2"
 coroutines = "1.9.0-RC"
-androidx-test-ext-junit = "1.1.5"
-espresso-core = "3.5.1"
+androidx-test-ext-junit = "1.2.1"
+espresso-core = "3.6.1"
 activity = "1.9.0"
 compose-bom = "2024.06.00"
-compose-no-bom = "1.7.0-beta03"
+compose-no-bom = "1.7.0-beta04"
 compose-material3 = "1.2.1"
 navigation = "2.7.7"
 lifecycle = "2.8.2"
@@ -24,7 +25,7 @@ hilt = "2.51.1"
 hilt-navigation-compose = "1.2.0"
 ktor = "2.3.10"
 benchmark = "1.2.4"
-runner = "1.5.2"
+runner = "1.6.1"
 
 [libraries]
 
@@ -83,7 +84,7 @@ coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-
 kotlinx-collection = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinx-collection" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 
-# Ktorff
+# Ktor
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
@@ -93,16 +94,28 @@ ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", 
 arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
 arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
 
+# Spotify
+spotify-auth = { module = "com.spotify.android:auth", version.ref = "auth" }
+
 [plugins]
+# Android
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+
+# Jetbrains/Kotlin
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-dsl = { id = "org.gradle.kotlin.kotlin-dsl", version.ref = "kotlin-dsl" }
 kotlin-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 benchmark = { id = "androidx.benchmark", version.ref = "benchmark" }
+
+# Custom Plugins
+app-android-application = { id = "app.explore.android.application", version = "unspecified" }
+app-android-library = { id = "app.explore.android.library", version = "unspecified" }
+app-compose = { id = "app.explore.compose", version = "unspecified" }
 
 [bundles]
 

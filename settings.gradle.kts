@@ -20,9 +20,13 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "ExploreAndroid"
 
 include(":app")
 
 include(":ui:theme")
 include(":ui:common")
+
+include(":external:spotify")

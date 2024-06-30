@@ -16,23 +16,23 @@ dependencies {
 gradlePlugin {
     plugins {
         register("root") {
-            id = "com.karthickr.explore.root"
+            id = "app.explore.root"
             implementationClass = "app.samples.gradle.RootConventionPlugin"
         }
         register("androidApplication") {
-            id = "com.karthickr.explore.android.application"
+            id = "app.explore.android.application"
             implementationClass = "app.samples.gradle.AndroidApplicationConventionPlugin"
         }
         register("androidLibrary") {
-            id = "com.karthickr.explore.android.library"
+            id = "app.explore.android.library"
             implementationClass = "app.samples.gradle.AndroidLibraryConventionPlugin"
         }
-        register("androidComposeLibrary") {
-            id = "com.karthickr.explore.android.library.compose"
-            implementationClass = "app.samples.gradle.AndroidComposeLibraryConventionPlugin"
+        register("composePlugin") {
+            id = "app.explore.compose"
+            implementationClass = "app.samples.gradle.ComposePlugin"
         }
         register("kotlinAndroid") {
-            id = "com.karthickr.explore.kotlin.android"
+            id = "app.explore.kotlin.android"
             implementationClass = "app.samples.gradle.KotlinAndroidConventionPlugin"
         }
     }
