@@ -12,7 +12,7 @@ class ComposePlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
             extensions.configure<BaseExtension> {
-                featu
+
             }
         }
     }
