@@ -1,4 +1,4 @@
-package com.karthickr.theme
+package com.explore.theme
 
 import androidx.compose.ui.graphics.Color
 

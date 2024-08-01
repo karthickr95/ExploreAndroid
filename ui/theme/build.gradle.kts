@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.karthickr.theme"
+    namespace = "com.explore.theme"
 }
 
 dependencies {

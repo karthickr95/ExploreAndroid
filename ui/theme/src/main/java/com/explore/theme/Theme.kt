@@ -1,4 +1,4 @@
-package com.karthickr.theme
+package com.explore.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -7,7 +7,7 @@ android {
     namespace = "com.karthickr.explore"
 
     defaultConfig {
-        applicationId = "com.karthickr95.explore"
+        applicationId = "com.karthickr.explore"
         versionCode = 1
         versionName = "1.0"
     }

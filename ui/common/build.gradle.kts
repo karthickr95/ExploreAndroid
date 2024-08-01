@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.karthickr.common"
+    namespace = "com.explore.common"
 
     buildFeatures {
 
