@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.kotlin.compose.compiler) apply false
 
-    alias(libs.plugins.app.android.application) apply false
-    alias(libs.plugins.app.android.library) apply false
+    alias(libs.plugins.app.application) apply false
+    alias(libs.plugins.app.library) apply false
     alias(libs.plugins.app.compose) apply false
 }

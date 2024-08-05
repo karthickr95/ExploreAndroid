@@ -120,8 +120,8 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 benchmark = { id = "androidx.benchmark", version.ref = "benchmark" }
 
 # Custom Plugins
-app-android-application = { id = "app.explore.android.application", version = "unspecified" }
-app-android-library = { id = "app.explore.android.library", version = "unspecified" }
+app-application = { id = "app.explore.application", version = "unspecified" }
+app-library = { id = "app.explore.library", version = "unspecified" }
 app-compose = { id = "app.explore.compose", version = "unspecified" }
 
 [bundles]
